@@ -21,7 +21,17 @@ function Gato(nome, idade, peso, vacina){
     this.vacina = vacina;
 };
 
+function Porco(nome, idade, peso, vacina){
+    Pet.call(this, nome);
+
+    this.idade = idade;
+    this.peso = peso;
+    this.vacina = vacina;
+};
+
 const cachorro1 = new Cachorro("Bela", 3, "5kg", true);
 const gato1 = new Gato("Mike", 2, "2kg", false);
+const porco1 = new Porco("Pig", 1, "3kg", true);
 console.log(cachorro1);
 console.log(gato1);
+console.log(porco1);
